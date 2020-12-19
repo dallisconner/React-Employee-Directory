@@ -13,13 +13,13 @@ function SearchBar() {
                 <div className="searchbox">
                     <form className="form-inline">
                         <input
-                            className="form-control mr-sm-2"
+                            className="form-control bg-warning mr-sm-2"
                             type="search"
-                            placeholder="Search"
+                            placeholder="Search(WIP)"
                             aria-label="Search"
                             // onChange={e => context.handleSearch(e)}
                         />
-                        <button className="btn my-2 my-sm-0" type="submit">
+                        <button className="btn btn-danger" type="submit">
                             Search
                  </button>
                     </form>

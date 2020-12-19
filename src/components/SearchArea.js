@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import api from "../utils/api";
 import SearchContext from "../utils/SearchContext";
-import SearchBar from "./SearchBar";
 import SearchTable from "./SearchTable";
 
 const SearchArea = () => {
