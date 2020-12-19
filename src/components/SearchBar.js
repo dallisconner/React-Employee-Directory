@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import SearchContext from "../utils/SearchContext";
 
 function SearchBar() {
+
+    const context = useContext(SearchContext);
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -14,6 +17,7 @@ function SearchBar() {
                             type="search"
                             placeholder="Search"
                             aria-label="Search"
+                            onChange={e => context.handleSearchChange(e)}
                         />
                         <button className="btn my-2 my-sm-0" type="submit">
                             Search
